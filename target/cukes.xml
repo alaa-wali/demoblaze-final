@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="114.421" tests="3" skipped="0" failures="0" errors="0">
+<testcase classname="Sign Up - testing that users can sign up successfully" name="user can sign up using valid email and password" time="35.607">
+<system-out><![CDATA[
+Given user clicks sign up button in header..................................passed
+When user fills in username "alaa.wali7"....................................passed
+And user fills in password "P@ssword123"....................................passed
+And user clicks on sign up button...........................................passed
+Then success message should be displayed....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login - testing that users can login successfully to their existing account" name="user can use their email and password to login to their account" time="26.369">
+<system-out><![CDATA[
+Given user clicks login button in header....................................passed
+When user enters username "alaa.wali7"......................................passed
+And user enters password "P@ssword123"......................................passed
+And user clicks on login button.............................................passed
+Then account opens successfully.............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="user can add products to the cart" name="Purchasing products successfully" time="51.867">
+<system-out><![CDATA[
+Given user clicks login button in header....................................passed
+When user enters username "alaa.wali7"......................................passed
+And user enters password "P@ssword123"......................................passed
+And user clicks on login button.............................................passed
+Then account opens successfully.............................................passed
+Given user clicks on Laptops in categories list.............................passed
+When user chooses product 1.................................................passed
+And user clicks on add to cart..............................................passed
+Then product is successfully added to cart..................................passed
+Given user goes to home page................................................passed
+And user clicks on Laptops in categories list...............................passed
+When user chooses product 2.................................................passed
+And user clicks on add to cart..............................................passed
+Then product is successfully added to cart..................................passed
+Given user clicks on cart button in header..................................passed
+Then user finds both products displayed in the cart with respective titles and prices.passed
+And total amount is calculated correctly....................................passed
+When user clicks on place order button......................................passed
+Then total amount is calculated correctly on the place order page...........passed
+When user fills out name "Alaa", country "Egypt", city "Giza", credit card number "1234567890", month "03" and year "27".passed
+And user clicks on purchase button..........................................passed
+Then order is placed successfully and a success message is displayed........passed
+]]></system-out>
+</testcase>
+</testsuite>
